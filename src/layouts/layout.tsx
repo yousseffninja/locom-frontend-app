@@ -41,7 +41,7 @@ export const DashboardLayout = (props: { children: any; }) => {
 
     return (
         <>
-            <TopNav onNavOpen={() => setOpenNav(true)} />
+            <TopNav />
             <LayoutRoot>
                 <LayoutContainer>
                     {children}
