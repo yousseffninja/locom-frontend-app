@@ -1,108 +1,64 @@
-import PropTypes from 'prop-types';
-import BellIcon from '@heroicons/react/24/solid/BellIcon';
-import UsersIcon from '@heroicons/react/24/solid/UsersIcon';
-import Bars3Icon from '@heroicons/react/24/solid/Bars3Icon';
-import MagnifyingGlassIcon from '@heroicons/react/24/solid/MagnifyingGlassIcon';
-import {
-    Badge,
-    Box,
-    IconButton,
-    Stack,
-    SvgIcon,
-    Tooltip,
-    useMediaQuery
-} from '@mui/material';
-import React from 'react';
-import { Theme } from '@mui/material';
-import { common } from '@mui/material/colors';
-const SIDE_NAV_WIDTH = 280;
-const TOP_NAV_HEIGHT = 64;
+import {Box, Button, Typography} from "@mui/material";
+import Logo from "@/assets/logo";
+import React from "react";
 
-export const TopNav = (props: { onNavOpen: any; }) => {
-    const { onNavOpen } = props;
-    const lgUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('lg'));
+export const TopNav = () => {
     return (
         <>
-            <Box
-                component="header"
-                sx={{
-                    backdropFilter: "blur(6px)",
-                    backgroundColor: "#00314C",
-                    position: "sticky",
-                    left: {
-                        lg: `${SIDE_NAV_WIDTH}px`
-                    },
-                    top: 0,
-                    width: {
-                        lg: `calc(100% - ${SIDE_NAV_WIDTH}px)`
-                    },
-                    zIndex: (theme) => theme.zIndex.appBar,
-                    boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
-
-                }}
-            >
-                <Stack
-                    alignItems="center"
-                    direction="row"
-                    justifyContent="space-between"
-                    spacing={2}
-                    sx={{
-                        minHeight: TOP_NAV_HEIGHT,
-                        px: 2
-                    }}
-                >
-                    <Stack
-                        alignItems="center"
-                        direction="row"
-                        spacing={2}
-                    >
-                        {!lgUp && (
-                            <IconButton onClick={onNavOpen}>
-                                <SvgIcon fontSize="small" >
-                                    <Bars3Icon />
-                                </SvgIcon>
-                            </IconButton>
-                        )}
-                        <Tooltip title="Search">
-                            <IconButton>
-                                <SvgIcon fontSize="small">
-                                    <MagnifyingGlassIcon  />
-                                </SvgIcon>
-                            </IconButton>
-                        </Tooltip>
-                    </Stack>
-                    <Stack
-                        alignItems="center"
-                        direction="row"
-                        spacing={2}
-                    >
-                        <Tooltip title="Contacts">
-                            <IconButton>
-                                <SvgIcon fontSize="small">
-                                    <UsersIcon />
-                                </SvgIcon>
-                            </IconButton>
-                        </Tooltip>
-                        <Tooltip title="Notifications">
-                            <IconButton>
-                                <Badge
-                                    badgeContent={4}
-                                    color="success"
-                                    variant="dot"
-                                >
-                                    <SvgIcon fontSize="small">
-                                        <BellIcon />
-                                    </SvgIcon>
-                                </Badge>
-                            </IconButton>
-                        </Tooltip>
-                    </Stack>
-                </Stack>
+            <Box sx={{ bgcolor: "#FFFFFF", width: "100%", px: 10, py: 5 }}>
+                <Box sx={{display: "flex", width: "100%", justifyContent: "space-between"}}>
+                    <Box sx={{ width: "13vw" }}>
+                        <Logo/>
+                    </Box>
+                    <Box sx={{display: "flex", justifyContent: "space-evenly", alignItems: "center", width: "60%"}}>
+                        <Box sx={{ display: "flex", justifyContent: "space-between", width: "70%" }}>
+                            <Button sx={{ color: "black" }}>
+                                <Typography sx={{ fontSize: "1vw", }}>
+                                    Pricing
+                                </Typography>
+                            </Button>
+                            <Button sx={{ color: "black" }}>
+                                <Typography sx={{ fontSize: "1vw", }}>
+                                    Resource Center
+                                </Typography>
+                            </Button>
+                            <Button sx={{ color: "black" }}>
+                                <Typography sx={{ fontSize: "1vw", }}>
+                                    About
+                                </Typography>
+                            </Button>
+                            <Button sx={{ color: "black" }}>
+                                <Typography sx={{ fontSize: "1vw", }}>
+                                    Contact Us
+                                </Typography>
+                            </Button>
+                        </Box>
+                        <Button
+                            sx={{
+                                position: 'relative',
+                                background: 'linear-gradient(326deg, #4563FF 0%, #58AFFF 100%)',
+                                color: 'white',
+                                width: '8vw',
+                                padding: '8px 16px',
+                                '&::before': {
+                                    content: '""',
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    width: '100%',
+                                    height: '100%',
+                                    background: 'inherit',
+                                    zIndex: -1,
+                                },
+                            }}
+                        >
+                            {/*<Typography sx={{ fontSize: "1.1492838541666666vw", }}>*/}
+                                Sign Up
+                            {/*</Typography>*/}
+                        </Button>
+                    </Box>
+                </Box>
             </Box>
         </>
     );
-};
-
-TopNav.propTypes = {
-    onNavOpen: PropTypes.func
-};
+}
