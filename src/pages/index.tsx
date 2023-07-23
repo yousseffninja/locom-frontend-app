@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useTheme } from '@mui/material/styles';
 import {
     Stack,
+    Box,
     Typography,
     TextField, InputAdornment,Button,OutlinedInput
 } from "@mui/material";
@@ -33,6 +34,9 @@ export const Page = () => {
             <Stack sx={{ width: deviceWidth, height: deviceHeight, bgcolor: "#ffffff" }}>
                 <TopNav />
                 <FirstSection />
+                <Box>
+
+                </Box>
             </Stack>
         </>
     )
