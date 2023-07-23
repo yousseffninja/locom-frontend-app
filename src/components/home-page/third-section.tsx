@@ -4,6 +4,7 @@ import {
     Button, Typography,
 } from "@mui/material";
 import Arrow from '@/assets/home-page/arrow.png'
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 export const ThirdSection = () => {
     return (
@@ -232,7 +233,7 @@ export const ThirdSection = () => {
                         pt: 3,
                         content: "''",
                     }}>
-                        Unleash Locom
+                        <FiberManualRecordIcon sx={{ width: 10 }} /> Unleash Locom
                     </Typography>
                     <Typography sx={{
 
@@ -243,7 +244,7 @@ export const ThirdSection = () => {
                         width: "20vw",
                         pt: 2,
                     }}>
-                        Automate referral generation
+                        <FiberManualRecordIcon sx={{ width: 10 }} /> Automate referral generation
                     </Typography>
                     <Typography sx={{
                         color: 'black',
@@ -253,7 +254,7 @@ export const ThirdSection = () => {
                         width: "20vw",
                         pt: 2,
                     }}>
-                        amplify your online reputation
+                        <FiberManualRecordIcon sx={{ width: 10 }} /> amplify your online reputation
                     </Typography>
                     <Typography sx={{
 
@@ -264,7 +265,7 @@ export const ThirdSection = () => {
                         width: "20vw",
                         pt: 2,
                     }}>
-                        skyrocket your sales
+                        <FiberManualRecordIcon sx={{ width: 10 }} /> skyrocket your sales
                     </Typography>
                 </Box>
             </Box>
