@@ -50,7 +50,7 @@ export const FirstSection = () => {
                     </Box>
                     <Box sx={{ mt: 3 }}>
                         <OutlinedInput
-                            sx={{ width: "31.25vw" }}
+                            sx={{ width: "100%" }}
                             id="outlined-basic"
                             placeholder="Your bussiness email"
                             endAdornment={
@@ -59,7 +59,7 @@ export const FirstSection = () => {
                                         sx={{
                                             background: 'linear-gradient(326deg, #4563FF 0%, #58AFFF 100%)',
                                             color: 'white',
-                                            width: "122.88px",
+                                            width: "8vw",
                                             px: 3,
                                             py: 1
                                         }}
