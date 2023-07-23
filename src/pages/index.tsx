@@ -13,8 +13,10 @@ export const Page = () => {
     const [openNav, setOpenNav] = useState(true);
     return (
         <>
-            <TopNav />
-            <FirstSection />
+            <Box sx={{ width: "100%", bgcolor: "#ffffff" }}>
+                <TopNav />
+                <FirstSection />
+            </Box>
         </>
     )
 }
