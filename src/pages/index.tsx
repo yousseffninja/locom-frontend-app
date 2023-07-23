@@ -6,11 +6,21 @@ import {
     Box,
     Button, Typography,
 } from "@mui/material";
+import CheckIcon from '@mui/icons-material/Check';
 
+import Step1 from "@/assets/home-page/steps/step-1.png";
+import Step2 from "@/assets/home-page/steps/step-2.png";
+import Step3 from "@/assets/home-page/steps/step-3.png";
+import Step4 from "@/assets/home-page/steps/step-4.png";
+import Step5 from "@/assets/home-page/steps/step-5.png";
+import Step6 from "@/assets/home-page/steps/step-6.png";
 
 import {FirstSection} from "@/components/home-page/first-section";
 import {SecondSection} from "@/components/home-page/second-section";
 import {ThirdSection} from "@/components/home-page/third-section";
+import Logo2 from "@/assets/home-page/logos/logo-2.png";
+import Verfy from "@/assets/home-page/verfy";
+import {FourthStep} from "@/components/home-page/fourth-step";
 
 export const Page = () => {
     const theme = useTheme();
@@ -40,68 +50,7 @@ export const Page = () => {
                 <FirstSection/>
                 <SecondSection/>
                 <ThirdSection />
-                <Box sx={{
-                    width: "100%",
-                    bgcolor: "#ffffff",
-                    pt: "9.7vw",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center"
-                }}>
-                    <Box sx={{
-                        width: '6.6vw',
-                        height: "3vw",
-                        bgcolor: "#F4F4F4",
-                        borderRadius: 2,
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center"
-                    }}>
-                        <Typography component="span" sx={{
-                            background: 'linear-gradient(326deg, #4563FF 0%, #58AFFF 100%)',
-                            backgroundClip: 'text',
-                            color: "transparent",
-                            fontFamily: 'DM Sans',
-                            fontSize: '18px',
-                            textAlign: 'center',
-                            fontStyle: 'normal',
-                            fontWeight: '600',
-                            lineHeight: 'normal',
-                            display: 'inline'
-                        }}>Features</Typography>
-                    </Box>
-                    <Typography
-                        component="span"
-                        sx={{
-                            width: "54.5vw",
-                            color: 'black',
-                            textAlign: 'center',
-                            fontSize: '3.4477864583333333vw',
-                            fontFamily: 'DM Sans',
-                            fontWeight: 550,
-                            mt: 4
-                        }}
-                    >
-                        How it Works?
-                    </Typography>
-                    <Typography sx={{
-                        mt: 5,
-                        width: "30vw",
-                        color: '#7E7E7E',
-                        textAlign: 'center',
-                        fontFamily: 'Microsoft Sans Serif',
-                        fontSize: '18px',
-                        fontStyle: 'normal',
-                        fontWeight: '400',
-                        lineHeight: '175%',
-                        alignSelf: "center"
-                    }}>
-                        It is a long established fact that a reader will be distracted by the readable content.
-                    </Typography>
-                </Box>
-                <Box>
-
-                </Box>
+                <FourthStep />
             </Box>
         </>
     )

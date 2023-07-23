@@ -28,7 +28,7 @@ export const FirstSection = () => {
                                     color: 'transparent',
                                     fontSize: '3.4477864583333333vw',
                                     fontFamily: 'DM Sans',
-                                    fontWeight: 400,
+                                    fontWeight: 600,
                                     display: 'inline', // or use 'inline-block' for more control over spacing
                                 }}
                             >
