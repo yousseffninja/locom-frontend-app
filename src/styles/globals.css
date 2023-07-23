@@ -16,6 +16,48 @@
   }
 }
 
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  src: local('DM Sans Bold'), local('DMSans-Bold'),
+  url('DMSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  src: local('Microsoft Sans Serif'), local('DMSans-Bold'),
+  url('DMSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Microsoft Sans Serif';
+  font-style: normal;
+  src: local('DM Sans Bold'), local('DMSans-Bold'),
+  url('micross.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Microsoft Sans Serif';
+  font-style: normal;
+  src: local('Microsoft Sans Serif'), local('DMSans-Bold'),
+  url('micross.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chivo';
+  font-style: normal;
+  src: local('Chivo'), local('DMSans-Bold'),
+  url('Chivo-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chivo';
+  font-style: normal;
+  src: local('Chivo'), local('DMSans-Bold'),
+  url('Chivo-Italic.ttf') format('truetype');
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

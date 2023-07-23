@@ -6,7 +6,7 @@ export const FirstSection = () => {
     return (
         <Box sx={{ bgcolor: "#ffffff", width: "100%" }}>
             <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", width: "100%", px: 10, pt: 5 }}>
-                <Box sx={{ width: "520px"  }}>
+                <Box sx={{ width: "550px"  }}>
                     <Box>
                         <Typography
                             component="div" // Set the outer Typography component as a div to allow inline display
@@ -14,7 +14,7 @@ export const FirstSection = () => {
                                 color: 'black',
                                 fontSize: '3.4477864583333333vw',
                                 fontFamily: 'DM Sans',
-                                fontWeight: 400,
+                                fontWeight: 500,
                                 display: 'inline', // or use 'inline-block' for more control over spacing
                             }}
                         >
@@ -39,11 +39,11 @@ export const FirstSection = () => {
                     <Box sx={{ mt: 3 }}>
                         <Typography sx={{
                             width: "100%",
-                            color: 'black',
                             fontSize: '17.653px',
                             fontFamily: 'DM Sans',
                             fontWeight: 400,
                             display: 'inline',
+                            color: "#5D6180"
                         }}>
                             The fastest and simple way to generate growing business solutions with our products
                         </Typography>
@@ -78,7 +78,7 @@ export const FirstSection = () => {
                             fontSize: "1vw",
                             fontStyle: "italic",
                             fontWeight: "400",
-                            color: "black",
+                            color: "#5D6180",
                             lineHeight: "150%",
                         }}>
                             *we will not disseminate your email and so you avoid spam
