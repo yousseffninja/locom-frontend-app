@@ -125,7 +125,7 @@ export const FirstSection = () => {
                     </Box>
                 </Box>
                 <Box sx={{ width: "800px", mt: 3 }}>
-                    <img src={Stats.src} className="App-logo" alt="logo" width={"100%"} />
+                    <img src={Stats.src} className="App-logo" alt="logo" width={"1663px"} height={"1269px"} />
                 </Box>
             </Box>
         </Box>

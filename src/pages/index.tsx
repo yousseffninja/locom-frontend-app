@@ -70,6 +70,37 @@ export const Page = () => {
                             display: 'inline'
                         }}>Features</Typography>
                     </Box>
+                    <Typography
+                        component="span"
+                        sx={{
+                            width: "54.5vw",
+                            color: 'black',
+                            textAlign: 'center',
+                            fontSize: '3.4477864583333333vw',
+                            fontFamily: 'DM Sans',
+                            fontWeight: 550,
+                            mt: 4
+                        }}
+                    >
+                        How it Works?
+                    </Typography>
+                    <Typography sx={{
+                        mt: 5,
+                        width: "30vw",
+                        color: '#7E7E7E',
+                        textAlign: 'center',
+                        fontFamily: 'Microsoft Sans Serif',
+                        fontSize: '18px',
+                        fontStyle: 'normal',
+                        fontWeight: '400',
+                        lineHeight: '175%',
+                        alignSelf: "center"
+                    }}>
+                        It is a long established fact that a reader will be distracted by the readable content.
+                    </Typography>
+                </Box>
+                <Box>
+
                 </Box>
             </Box>
         </>
