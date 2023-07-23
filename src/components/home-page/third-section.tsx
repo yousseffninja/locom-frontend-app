@@ -17,10 +17,9 @@ export const ThirdSection = () => {
                 alignItems: "center"
             }}>
                 <Box sx={{
-                    width: '6.6vw',
+                    width: "6.6vw",
                     height: "3vw",
                     bgcolor: "#F4F4F4",
-                    borderRadius: 2,
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center"
@@ -79,7 +78,7 @@ export const ThirdSection = () => {
                     lineHeight: '175%',
                     alignSelf: "center"
                 }}>
-                    Don't let overlooked referrals and a lackluster online reputation hinder your business growth. Discover the solution that drives your sales to unprecedented levels.
+                    Do not let overlooked referrals and a lackluster online reputation hinder your business growth. Discover the solution that drives your sales to unprecedented levels.
                 </Typography>
                 <Box
                     sx={{
